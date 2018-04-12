@@ -10,12 +10,15 @@ namespace random
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
+            // 將所有號碼放入list中
+            List<int> numbers = new List<int>();
 
-            for(int i = 0;i < 6;i++)
+            for(int i = 1 ; i <= 42 ; i++)
             {
-                Console.WriteLine(rand.Next(1, 43));
+                numbers.Add(i);
             }
+
+            Console.ReadLine();
         }
     }
 }
