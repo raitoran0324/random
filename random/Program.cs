@@ -10,6 +10,12 @@ namespace random
     {
         static void Main(string[] args)
         {
+            Random rand = new Random();
+
+            for(int i = 0;i < 6;i++)
+            {
+                Console.WriteLine(rand.Next(1, 43));
+            }
         }
     }
 }
